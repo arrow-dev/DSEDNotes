@@ -212,7 +212,7 @@ namespace dsednotes
         [Java.Interop.Export()]
         public async void AddItem(View view)
         {
-            if (client == null || string.IsNullOrWhiteSpace(textNewToDo.Text) ||  user != null) {
+            if (client == null || string.IsNullOrWhiteSpace(textNewToDo.Text)) {
                 return;
             }
             if (user == null)
